@@ -9,32 +9,36 @@
 </head>
 
 <body>
-<!--<h1>List for the Day</h1>
-<div class="panel panel-default search-bar col-xs-offset-3">
-  <div class="panel-body">
-    <input class="form-control" type="text" id="weather-search" placeholder="Enter Text Here">
-    <button type="button" class="btn btn-primary btn-lg" id="clicky-button"  data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i>Wait for it.....">Submit</button>
-  </div>
-</div>-->
 
-<!--JQUERY DIVS-->
- 
- <div class="container">
+  <div class="container">
 		<h2>Simple To Do List</h2>
     <p><em>Click and drag to reorder, double click to cross an item off.</em></p>
        
 		<form name="toDoList">
-			<input type="text" name="ListItem"/>
+			<input type="text" name="ListItem" id="todo-input"/>
 		</form>
-    
-		<div id="button">Add Items</div>
+
+      
+		 <div id="button">Add Items</div>
 		<div id="button2">Remove Items</div>
 		<br/>
-		<ol></ol>
+		<ol></ol> 
 
-  <!-- <script src="/lib/bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+		<h3>Todo</h3>
+		<ul id="incomplete-tasks"></ul>
+
+		<h3>Completed</h3>
+		<ul id="completed-tasks"></ul>
+
+<ul id="listOne" class="list" data-button-text="Add">
+    	
+
+  
+  <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
   <script src="/lib/bower_components/jquery/dist/jquery.min.js"></script>
-<script src="/javascripts/main.js"></script>
+  <script src="/javascripts/firebase.js"></script>
+  <script src="/javascripts/firebaseMethods.js"></script>
+	<script src="/javascripts/main.js"></script>
+
 </body>
 </html>
